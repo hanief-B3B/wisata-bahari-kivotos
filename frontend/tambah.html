@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Wisata - Wisata Bahari Kivotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Wisata Bahari Kivotos</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="tambah.html" class="nav-link active">Tambah Wisata</a>
+                <span id="user-info" style="display:none;"></span>
+                <button id="logout-btn" class="btn-logout" style="display:none;">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-section">
+            <h2>Tambah Wisata Baru</h2>
+            <form id="tambah-wisata-form">
+                <div class="form-group">
+                    <label for="nama">Nama Wisata</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="lokasi">Lokasi</label>
+                    <input type="text" id="lokasi" name="lokasi" required>
+                </div>
+                <div class="form-group">
+                    <label for="kategori">Kategori</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="">Pilih Kategori</option>
+                        <option value="Pantai">Pantai</option>
+                        <option value="Pulau">Pulau</option>
+                        <option value="Snorkeling">Snorkeling</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="deskripsi">Deskripsi</label>
+                    <textarea id="deskripsi" name="deskripsi" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="gambar_url">URL Gambar</label>
+                    <input type="url" id="gambar_url" name="gambar_url" required>
+                </div>
+                <button type="submit" class="btn-primary">Tambah Wisata</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wisata Bahari Kivotos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

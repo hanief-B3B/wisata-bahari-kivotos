@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Wisata - Wisata Bahari Kivotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Wisata Bahari Kivotos</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <span id="user-info" style="display:none;"></span>
+                <button id="logout-btn" class="btn-logout" style="display:none;">Logout</button>
+                <button id="login-btn" class="btn-primary">Login</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="wisata-detail">
+        </section>
+
+        <section class="rating-section" id="rating-section" style="display:none;">
+            <h3>Beri Rating</h3>
+            <div class="rating-stars">
+                <span class="star" data-value="1"></span>
+                <span class="star" data-value="2"></span>
+                <span class="star" data-value="3"></span>
+                <span class="star" data-value="4"></span>
+                <span class="star" data-value="5"></span>
+            </div>
+            <button id="submit-rating" class="btn-primary">Kirim Rating</button>
+        </section>
+
+        <section class="login-prompt" id="login-prompt">
+            <p>Login sebagai user untuk memberikan rating</p>
+            <a href="login.html" class="btn-primary">Login</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Wisata Bahari Kivotos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

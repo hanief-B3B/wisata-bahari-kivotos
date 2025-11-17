@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisata Bahari Kivotos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>Wisata Bahari Kivotos</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Beranda</a>
+                <a href="tambah.html" class="nav-link" id="tambah-link" style="display:none;">Tambah Wisata</a>
+                <span id="user-info" style="display:none;"></span>
+                <button id="logout-btn" class="btn-logout" style="display:none;">Logout</button>
+                <button id="login-btn" class="btn-primary">Login</button>
+                <button id="register-btn" class="btn-secondary">Register</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Jelajahi Keindahan Bahari Kivotos</h2>
+            <p>Temukan destinasi wisata terbaik di Kivotos</p>
+        </section>
+
+        <section class="filter-section">
+            <select id="category-filter">
+                <option value="all">Semua Kategori</option>
+                <option value="Pantai">Pantai</option>
+                <option value="Pulau">Pulau</option>
+                <option value="Snorkeling">Snorkeling</option>
+            </select>
+            <input type="text" id="search-input" placeholder="Cari destinasi...">
+        </section>
+
+        <section id="wisata-list" class="wisata-grid">
+        </section>
+    </main>
+
+    <footer>
+        <p>Wisata Bahari Kivotos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
